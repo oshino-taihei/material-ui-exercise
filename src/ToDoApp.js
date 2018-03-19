@@ -40,7 +40,7 @@ class ToDoApp extends Component {
                     ToDoリスト
                 </Icon>
                 <ToDoInput addItem={this.addItem} hasItem={this.hasItem} />
-                <ToDoList items={this.state.items} addItem={this.addItem} deleteItem={this.deleteItem} />
+                <ToDoList items={this.state.items} deleteItem={this.deleteItem} />
             </div>
         )
     }
