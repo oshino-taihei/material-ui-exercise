@@ -8,8 +8,7 @@ import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import './App.css';
-import './ToDoList'
-import ToDoList from './ToDoList';
+import ToDoApp from './ToDoApp';
 
 const styles = {
   root: {
@@ -74,7 +73,7 @@ class App extends Component {
           </Menu>
         </Toolbar>
       </AppBar>
-      <ToDoList />
+      <ToDoApp />
       </div>
     );
   }
