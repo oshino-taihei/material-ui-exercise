@@ -4,6 +4,9 @@ import List, { ListItem, ListItemSecondaryAction, ListItemText } from 'material-
 import Checkbox from 'material-ui/Checkbox'
 import IconButton from 'material-ui/IconButton'
 import DeleteIcon from 'material-ui-icons/Delete'
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+
+import './ToDoList.css';
 
 const styles = theme => ({
     container: {
@@ -58,7 +61,16 @@ class ToDoList extends Component {
         })
         return (
             <List>
-                {listItems}
+                <CSSTransitionGroup
+                    transitionName="fade"
+                    transitionAppear={false}
+                    transitionEnter={true}
+                    transitionEnterTimeout={300}
+                    transitionLeave={true}
+                    transitionLeaveTimeout={300}
+                >
+                    {listItems}
+                </CSSTransitionGroup>
             </List>
         )
     }

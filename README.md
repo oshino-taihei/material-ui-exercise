@@ -8,6 +8,7 @@ React + Material-UIサンプル
 $ create-react-app .
 $ npm i --save material-ui@next
 $ npm i --save material-ui-icons
+$ npm i --save react-transition-group@1.x
 ```
 
 # ビルド
